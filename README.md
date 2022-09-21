@@ -1,4 +1,4 @@
-#  Grzegorz Jendernal - To do list
+#  Grzegorz Jendernal - To do list - React
 
 ![logo](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/public/share.png)
 
