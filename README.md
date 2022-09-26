@@ -10,7 +10,7 @@ This is recreated as React App my [To-do list](https://grzegorzjendernal.github.
 
 ##  How to use?
 
-![Site screen](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/public/animation.gif)
+![Site screen](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/public/Animation.gif)
 
 - write your task and click "Dodaj zadanie",
 
