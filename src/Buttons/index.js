@@ -1,7 +1,7 @@
 import "./style.css";
 
 const Buttons = ({ hideDoneTasks, tasks }) => (
-    props.tasks.length > 0 && (
+    tasks.length > 0 && (
         <span className="buttons">
             <button className="buttons__button">
                 {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
