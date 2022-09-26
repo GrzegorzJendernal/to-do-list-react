@@ -6,7 +6,21 @@
 
 ## Description
 
-This is recreated as React App my [To-do list](https://grzegorzjendernal.github.io/to-do-list/). For now, I have reproduced the appearance of the application, without interaction.
+This is recreated as React App my [To-do list](https://grzegorzjendernal.github.io/to-do-list/). You can create a to-do list and mark the tasks you have already done.
+
+##  How to use?
+
+![Site screen](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/public/animation.gif)
+
+- write your task and click "Dodaj zadanie",
+
+- when task is done click on green button,
+
+- if you want delete a task, click red button,
+
+- click on "Ukończ wszystkie" to mark all tasks as done,
+
+- you can hide and show again completed tasks with the button "Ukryj/Pokaż ukończone".
 
 ## Getting Started with Create React App
 
