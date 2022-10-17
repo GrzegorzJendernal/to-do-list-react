@@ -4,7 +4,7 @@ import List from "./List";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import Main from "./Main";
+import { Main } from "./Main/styled";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
@@ -64,7 +64,7 @@ function App() {
           removeTask={removeTask}
           toggleTaskDone={toggleTaskDone} />}
       />
-    </Main >
+    </Main>
   );
 }
 
