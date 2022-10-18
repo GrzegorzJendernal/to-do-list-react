@@ -29,7 +29,7 @@ const Form = ({ addNewTask }) => {
                 onChange={({ target }) => setNewTaskContent(target.value)}
                 required
             />
-            <FormButton onClick={() => inputRef.current.focus}>Dodaj zadanie</FormButton>
+            <FormButton onClick={() => inputRef.current.focus()}>Dodaj zadanie</FormButton>
         </StyledForm>
     );
 };
