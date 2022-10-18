@@ -14,18 +14,18 @@ const StyledButton = styled.button`
     margin: 10px;
 
     &:hover {
-    color: hsl(180, 100%, 35%);
-    transition: 1s;
+        color: hsl(180, 100%, 35%);
+        transition: 1s;
     }
 
     &:active {
-    outline: solid 2px #000000;
-    color: hsl(180, 100%, 45%);
+        outline: solid 2px #000000;
+        color: hsl(180, 100%, 45%);
     }
 
     &:disabled {
-    color: hsl(0, 0%, 70%);
-    cursor: auto;
+        color: hsl(0, 0%, 70%);
+        cursor: auto;
     }
 
     @media (max-width: 767px) {

@@ -30,7 +30,7 @@ const Button = styled.button`
     cursor: pointer;
     transition: background 1s;
     &:active 
-    {outline: solid 2px #000000};
+        {outline: solid 2px #000000};
 
     ${({ toggleDone }) => toggleDone && css`
         background: #218b21;

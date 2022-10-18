@@ -28,6 +28,7 @@ const Form = ({ addNewTask }) => {
                 placeholder="Co jest do zrobienia?"
                 onChange={({ target }) => setNewTaskContent(target.value)}
                 required
+                autoFocus
             />
             <FormButton onClick={() => inputRef.current.focus()}>Dodaj zadanie</FormButton>
         </StyledForm>

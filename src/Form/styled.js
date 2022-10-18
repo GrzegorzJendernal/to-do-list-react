@@ -26,13 +26,13 @@ const FormButton = styled.button`
     cursor: pointer;
 
     &:hover {
-    background-color: hsl(180, 100%, 35%);
-    transition: 1s;
-    transform: scale(1.15);
+        background-color: hsl(180, 100%, 35%);
+        transition: 1s;
+        transform: scale(1.15);
     }
 
     &:active {
-    outline: solid 2px #000000
+        outline: solid 2px #000000
     }
 `;
 

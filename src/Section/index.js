@@ -6,9 +6,7 @@ const Section = ({ title, body, optionalContent }) => (
             {title}
             {optionalContent}
         </Subheader>
-        <div>
-            {body}
-        </div>
+        {body}
     </StyledSection>
 );
 
