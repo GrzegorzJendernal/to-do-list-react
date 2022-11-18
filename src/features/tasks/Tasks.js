@@ -6,15 +6,10 @@ import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import { Main } from "../../common/Main/styled";
-import { useTasks } from "../../useTasks";
 import { selectTasks } from './List/tasksSlice';
 
 function Tasks() {
   const { tasks } = useSelector(selectTasks);
-
-  const {
-    setAllDone,
-  } = useTasks();
 
   return (
     <Main>
@@ -25,8 +20,7 @@ function Tasks() {
       />
       <Section
         title="Lista zadań"
-        optionalContent={<Buttons
-          setAllDone={setAllDone} />}
+        optionalContent={<Buttons />}
         body={<List />}
       />
     </Main>
