@@ -13,8 +13,6 @@ function Tasks() {
   const { tasks } = useSelector(selectTasks);
 
   const {
-    removeTask,
-    toggleTaskDone,
     setAllDone,
   } = useTasks();
 
@@ -29,9 +27,7 @@ function Tasks() {
         title="Lista zadań"
         optionalContent={<Buttons
           setAllDone={setAllDone} />}
-        body={<List
-          removeTask={removeTask}
-          toggleTaskDone={toggleTaskDone} />}
+        body={<List />}
       />
     </Main>
   );
