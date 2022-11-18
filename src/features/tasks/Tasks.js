@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import Form from "./Form";
 import List from "./List";
 import Buttons from "./Buttons";
@@ -6,20 +7,15 @@ import Section from "../../common/Section";
 import Header from "../../common/Header";
 import { Main } from "../../common/Main/styled";
 import { useTasks } from "../../useTasks";
+import { selectTasks } from './List/tasksSlice';
 
-function App() {
-  const [hideDone, setHideDone] = useState(false);
-
-  const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
-  };
+function Tasks() {
+  const { tasks } = useSelector(selectTasks);
 
   const {
-    tasks,
     removeTask,
     toggleTaskDone,
     setAllDone,
-    addNewTask,
   } = useTasks();
 
   return (
@@ -27,18 +23,13 @@ function App() {
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask} />}
+        body={<Form />}
       />
       <Section
         title="Lista zadań"
         optionalContent={<Buttons
-          tasks={tasks}
-          hideDone={hideDone}
-          toggleHideDone={toggleHideDone}
           setAllDone={setAllDone} />}
         body={<List
-          tasks={tasks}
-          hideDone={hideDone}
           removeTask={removeTask}
           toggleTaskDone={toggleTaskDone} />}
       />
@@ -46,4 +37,4 @@ function App() {
   );
 }
 
-export default App;
+export default Tasks;
