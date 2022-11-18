@@ -6,7 +6,6 @@ import Section from "../../common/Section";
 import Header from "../../common/Header";
 import { Main } from "../../common/Main/styled";
 
-
 const Tasks = () => (
   <Main>
     <Header title="Lista zadań" />
