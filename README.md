@@ -73,4 +73,8 @@ To create the page I used:
 
 5. React Create App
 
+6. Styled components
+
+7. Redux Toolkit
+
 ###  Enjoy using!
