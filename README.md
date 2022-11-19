@@ -1,6 +1,6 @@
 #  Grzegorz Jendernal - To do list - React
 
-![logo](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/public/share.png)
+![logo](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/images/share.png)
 
 [To-do list in React!](https://grzegorzjendernal.github.io/to-do-list-react/)
 
@@ -10,7 +10,7 @@ This is recreated as React App my [To-do list](https://grzegorzjendernal.github.
 
 ##  How to use?
 
-![Site screen](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/public/Animation.gif)
+![Site screen](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/images/Animation.gif)
 
 - write your task and click "Dodaj zadanie",
 

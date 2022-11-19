@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledSection = styled.section`
- background-color: #ffffff;
+    background-color: #ffffff;
 `;
 
 const Subheader = styled.h2`

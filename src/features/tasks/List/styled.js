@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 const TasksList = styled.ul`
     list-style: none;
     padding: 10px;
-    `;
+`;
 
 const ListTask = styled.li`
     border-bottom: solid 2px #ededed;
@@ -14,12 +14,14 @@ const ListTask = styled.li`
     align-items: center;
 
     ${({ hidden }) => hidden && css`
-        display: none;`}
+        display: none;
+    `}
 `;
 
 const Content = styled.span`
     ${({ done }) => done && css`
-        text-decoration: line-through;`}
+        text-decoration: line-through;
+    `}
 `;
 
 const Button = styled.button`
@@ -36,13 +38,13 @@ const Button = styled.button`
         background: #218b21;
         &:hover 
         {background: hsl(120, 62%, 44%);}
-        `}
+    `}
 
     ${({ remove }) => remove && css`
         background: hsl(348, 84%, 47%);
         &:hover
         {background: hsl(348, 84%, 57%);}
-        `}
-    `;
+    `}
+`;
 
 export { TasksList, ListTask, Content, Button };
