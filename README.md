@@ -1,6 +1,6 @@
 #  Grzegorz Jendernal - To do list - React
 
-![logo](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/images/share.png)
+![logo](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/public/share.png)
 
 [To-do list in React!](https://grzegorzjendernal.github.io/to-do-list-react/)
 
