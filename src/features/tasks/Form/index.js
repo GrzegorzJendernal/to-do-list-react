@@ -41,7 +41,11 @@ const Form = () => {
                 required
                 autoFocus
             />
-            <FormButton onClick={() => inputRef.current.focus()}>Dodaj zadanie</FormButton>
+            <FormButton
+                onClick={() => inputRef.current.focus()}
+            >
+                Dodaj zadanie
+            </FormButton>
         </StyledForm>
     );
 };

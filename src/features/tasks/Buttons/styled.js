@@ -5,7 +5,7 @@ const StyledButtons = styled.span`
     flex-wrap: wrap;
 `;
 
-const StyledButton = styled.button`
+const Button = styled.button`
     border: none;
     color: hsl(180, 100%, 25%);
     font-size: 17px;
@@ -34,4 +34,4 @@ const StyledButton = styled.button`
     }
 `;
 
-export { StyledButtons, StyledButton };
+export { StyledButtons, Button };

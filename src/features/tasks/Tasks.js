@@ -8,7 +8,9 @@ import { Main } from "../../common/Main/styled";
 
 const Tasks = () => (
   <Main>
-    <Header title="Lista zadań" />
+    <Header
+      title="Lista zadań"
+    />
     <Section
       title="Dodaj nowe zadanie"
       body={<Form />}
