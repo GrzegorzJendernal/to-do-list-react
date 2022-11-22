@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledButtons = styled.span`
+const Wrapper = styled.span`
     display: flex;
     flex-wrap: wrap;
 `;
@@ -34,4 +34,4 @@ const Button = styled.button`
     }
 `;
 
-export { StyledButtons, Button };
+export { Wrapper, Button };
