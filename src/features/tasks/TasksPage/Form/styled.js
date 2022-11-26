@@ -13,11 +13,6 @@ const StyledForm = styled.form`
     }
 `;
 
-const Input = styled.input`
-    padding: 10px;
-    cursor: none;
-`;
-
 const FormButton = styled.button`
     color: #ffffff;
     background-color: teal;
@@ -36,4 +31,4 @@ const FormButton = styled.button`
     }
 `;
 
-export { StyledForm, Input, FormButton };
+export { StyledForm, FormButton };
