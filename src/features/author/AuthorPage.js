@@ -1,9 +1,8 @@
-import React from 'react';
 import Header from '../../common/Header';
 import { Main } from '../../common/Main/styled';
 import Section from '../../common/Section';
 
-const Author = () => (
+const AuthorPage = () => (
     <Main>
         <Header
             title="O autorze"
@@ -15,4 +14,4 @@ const Author = () => (
     </Main>
 );
 
-export default Author;
+export default AuthorPage;
