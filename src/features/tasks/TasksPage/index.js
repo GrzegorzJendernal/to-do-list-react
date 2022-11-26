@@ -2,12 +2,12 @@ import React from 'react';
 import Form from "./Form";
 import List from "./List";
 import Buttons from "./Buttons";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import { Main } from "../../common/Main/styled";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
+import { Main } from "../../../common/Main/styled";
 import FetchButton from './FetchButton';
 
-const Tasks = () => (
+const TasksPage = () => (
   <Main>
     <Header
       title="Lista zadań"
@@ -25,4 +25,4 @@ const Tasks = () => (
   </Main>
 );
 
-export default Tasks;
+export default TasksPage;
