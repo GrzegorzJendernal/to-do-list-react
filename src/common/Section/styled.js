@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledSection = styled.section`
     background-color: #ffffff;
-    margin:10px;
+    margin:10px 0px;
 `;
 
 const Subheader = styled.h2`

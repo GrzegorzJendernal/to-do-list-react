@@ -4,8 +4,8 @@ import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import { Main } from "../../../common/Main/styled";
-import FetchButton from './FetchButton';
 import Search from "./Search";
+import ExampleTasksButton from "./ExampleTasksButton";
 
 
 const TasksPage = () => (
@@ -15,7 +15,7 @@ const TasksPage = () => (
     />
     <Section
       title="Dodaj nowe zadanie"
-      optionalContent={<FetchButton />}
+      optionalContent={<ExampleTasksButton />}
       body={<Form />}
     />
     <Section

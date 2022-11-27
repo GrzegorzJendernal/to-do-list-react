@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledNavLink = styled(NavLink).attrs(() => ({
-    activeClassName: "active",
+  activeClassName: "active",
 }))`
     &.active {
       font-weight: bold;
@@ -20,6 +20,7 @@ grid-gap: 30px;
 padding:20px;
 list-style:none;
 background-color:hsl(180, 100%, 25%);
+margin: 0px;
 
 `;
 
