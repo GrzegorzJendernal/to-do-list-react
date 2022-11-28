@@ -1,6 +1,7 @@
 import Header from '../../common/Header';
 import { Main } from '../../common/Main/styled';
 import Section from '../../common/Section';
+import AboutMe from './AboutMe';
 
 const AuthorPage = () => (
     <Main>
@@ -9,7 +10,7 @@ const AuthorPage = () => (
         />
         <Section
             title="Grzegorz Jendernal"
-            body={<>huj</>}
+            body={<AboutMe />}
         />
     </Main>
 );
