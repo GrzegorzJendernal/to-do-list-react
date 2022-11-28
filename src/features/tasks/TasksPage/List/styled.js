@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 const TasksList = styled.ul`
@@ -24,6 +25,11 @@ const Content = styled.span`
     `}
 `;
 
+const StyledLink = styled(Link)`
+    color: hsl(180, 100%, 25%);
+    text-decoration:none;
+`;
+
 const Button = styled.button`
     height: 30px;
     width: 30px;
@@ -47,4 +53,4 @@ const Button = styled.button`
     `}
 `;
 
-export { TasksList, ListTask, Content, Button };
+export { TasksList, ListTask, Content, Button, StyledLink };
