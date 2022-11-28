@@ -5,6 +5,6 @@ export const getExampleTask = async () => {
         const response = await axios.get("/to-do-list-react/exampleTasks.json");
         return response.data;
     } catch (error) {
-        console.log("error");
+        return [{ content: "przykładowe zadanie", done: false, id: "abcd" }];
     }
 };
