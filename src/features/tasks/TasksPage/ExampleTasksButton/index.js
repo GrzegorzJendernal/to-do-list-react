@@ -24,13 +24,13 @@ const ExampleTasksButton = () => {
                 Pobierz przykładowe zadania
             </Button>
         );
-    if (status === "loading")
-        return (
-            <Button
-                disabled>
-                Ładowanie...
-            </Button>
-        );
+
+    return (
+        <Button
+            disabled>
+            Ładowanie...
+        </Button>
+    );
 };
 
 export default ExampleTasksButton; 

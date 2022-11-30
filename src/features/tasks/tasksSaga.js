@@ -8,16 +8,17 @@ function* fetchExampleTasksHandler() {
         const expampleTasks = yield call(getExampleTask);
         yield put(setTasks(expampleTasks));
     } catch (error) {
-        yield call(console.log, error);
+        const emergencyTask = [{ content: "przykładowe zadanie", done: false, id: "abcd" }];
+        yield put(setTasks(emergencyTask));
     }
-}
+};
 
 function* saveTasksInLocalStorageHandler() {
     const tasks = yield select(selectTasks);
     yield call(saveTasksInLocalStorage, tasks);
-}
+};
 
 export function* tasksSaga() {
     yield takeLatest(fetchExpampleTasks.type, fetchExampleTasksHandler);
     yield takeEvery("*", saveTasksInLocalStorageHandler);
-}
+};
