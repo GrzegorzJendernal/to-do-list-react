@@ -10,7 +10,7 @@ This is recreated as React App my [To-do list](https://grzegorzjendernal.github.
 
 ##  How to use?
 
-![Site screen](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/images/Animation.gif)
+![Site screen](https://raw.githubusercontent.com/GrzegorzJendernal/to-do-list-react/main/images/screen.png)
 
 - write your task and click "Dodaj zadanie",
 
@@ -20,7 +20,13 @@ This is recreated as React App my [To-do list](https://grzegorzjendernal.github.
 
 - click on "Ukończ wszystkie" to mark all tasks as done,
 
-- you can hide and show again completed tasks with the button "Ukryj/Pokaż ukończone".
+- you can hide and show again completed tasks with the button "Ukryj/Pokaż ukończone",
+
+- if you click on "Pobierz przykładowe zadania" will load example tasks. Be careful, all tasks on the board will be deleted,
+
+- You can see the details of the task by clicking on its content,
+
+- you can filter tasks using the search engine.
 
 ## Getting Started with Create React App
 
@@ -65,16 +71,18 @@ To create the page I used:
 
 1. HTML
 
-2. CSS
+2. JavaScript
 
-3. JavaScript
+3. JSX
 
-4. BEM convention
+4. React Create App
 
-5. React Create App
+5. Styled components
 
-6. Styled components
+6. Redux Toolkit
 
-7. Redux Toolkit
+7. Redux-saga
+
+8. React-router
 
 ###  Enjoy using!
