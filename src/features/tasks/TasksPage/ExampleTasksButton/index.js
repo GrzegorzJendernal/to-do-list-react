@@ -1,34 +1,17 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Button } from "../Buttons/styled";
-import { fetchExpampleTasks } from "../../tasksSlice";
-import { useState } from "react";
+import { fetchExpampleTasks, secelctIsLoading } from "../../tasksSlice";
 
 const ExampleTasksButton = () => {
-    const [status, setStatus] = useState("OK");
     const dispatch = useDispatch();
-
-    const loadTasks = () => dispatch(fetchExpampleTasks());
-
-    const wait = () => {
-        setStatus("loading");
-        setTimeout(() => {
-            loadTasks();
-            setStatus("OK");
-        }, 1000);
-    };
-
-    if (status === "OK")
-        return (
-            <Button
-                onClick={wait}>
-                Pobierz przykładowe zadania
-            </Button>
-        );
+    const isLoading = useSelector(secelctIsLoading);
 
     return (
         <Button
-            disabled>
-            Ładowanie...
+            onClick={() => dispatch(fetchExpampleTasks())}
+            disabled={isLoading}
+        >
+            {isLoading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
         </Button>
     );
 };
