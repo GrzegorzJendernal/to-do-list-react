@@ -7,20 +7,20 @@ import { getTaskById } from '../tasksSlice';
 import { Container, Wrapper } from './styled';
 
 const TaskPage = () => {
-    const { id } = useParams();
-    const task = useSelector(state => getTaskById(state, id));
-
-    return (
-        <Main>
-            <Header
-                title="Szczegóły zadania"
-            />
-            <Section
-                title={task ? task.content : "Nie znaleziono zadania 😞"}
-                body={task ? <Wrapper> <Container>Ukończono:</Container> {task.done ? "Tak" : "Nie"} </Wrapper> : ""}
-            />
-        </Main>
-    );
+	const {id} = useParams();
+	const task = useSelector(state => getTaskById(state, id));
+	
+	return (
+		<Main>
+			<Header
+				title="Szczegóły zadania"
+			/>
+			<Section
+				title={task ? task.content : "Nie znaleziono zadania 😞"}
+				body={task ? <Wrapper> <Container>Ukończono:</Container> {task.done ? "Tak" : "Nie"} </Wrapper> : ""}
+			/>
+		</Main>
+	);
 }
 
 export default TaskPage;

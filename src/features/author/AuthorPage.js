@@ -4,15 +4,15 @@ import Section from '../../common/Section';
 import AboutMe from './AboutMe';
 
 const AuthorPage = () => (
-    <Main>
-        <Header
-            title="O autorze"
-        />
-        <Section
-            title="Grzegorz Jendernal"
-            body={<AboutMe />}
-        />
-    </Main>
+	<Main>
+		<Header
+			title="O autorze"
+		/>
+		<Section
+			title="Grzegorz Jendernal"
+			body={<AboutMe/>}
+		/>
+	</Main>
 );
 
 export default AuthorPage;

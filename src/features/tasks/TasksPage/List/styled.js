@@ -14,13 +14,13 @@ const ListTask = styled.li`
     grid-gap: 10px;
     align-items: center;
 
-    ${({ hidden }) => hidden && css`
+    ${({hidden}) => hidden && css`
         display: none;
     `}
 `;
 
 const Content = styled.span`
-    ${({ done }) => done && css`
+    ${({done}) => done && css`
         text-decoration: line-through;
     `}
 `;
@@ -40,13 +40,13 @@ const Button = styled.button`
     &:active 
         {outline: solid 2px #000000};
 
-    ${({ toggleDone }) => toggleDone && css`
+    ${({toggleDone}) => toggleDone && css`
         background: #218b21;
         &:hover 
         {background: hsl(120, 62%, 44%);}
     `}
 
-    ${({ remove }) => remove && css`
+    ${({remove}) => remove && css`
         background: hsl(348, 84%, 47%);
         &:hover
         {background: hsl(348, 84%, 57%);}
