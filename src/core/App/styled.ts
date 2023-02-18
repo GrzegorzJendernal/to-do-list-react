@@ -24,7 +24,7 @@ const NavList = styled.ul`
   padding: 20px;
   list-style: none;
   background-color: hsl(180, 100%, 25%);
-  margin: 0px;
+  margin: 0;
 `;
 
 export { StyledNavLink, NavList };
