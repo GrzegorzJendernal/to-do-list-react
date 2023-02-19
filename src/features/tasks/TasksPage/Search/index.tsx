@@ -1,3 +1,4 @@
+import React from "react";
 import { useQueryParameter, useReplaceQueryParameter } from "../../queryParamaters";
 import Input from "../Input";
 import searchQueryParamName from "../searchQueryParamName";
