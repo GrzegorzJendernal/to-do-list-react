@@ -4,11 +4,17 @@ import Input from "../Input";
 import searchQueryParamName from "../searchQueryParamName";
 import { Wrapper } from "./styled";
 
+interface OnInputChangeProps {
+	target: {
+		value : string,
+	},
+}
+
 const Search = () => {
 	const query = useQueryParameter(searchQueryParamName);
 	const replaceQueryParameter = useReplaceQueryParameter();
 	
-	const onInputChange = ({target}) => {
+	const onInputChange = ({target}: OnInputChangeProps) => {
 		replaceQueryParameter({
 			key: searchQueryParamName,
 			value: target.value.trim() !== "" ? target.value : undefined,
