@@ -1,20 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { getTasksFromLocalStorage } from "./tasksLocalStorage";
 import {RootState} from "../../core/store";
-
-interface Task {
-		content: string,
-		done: boolean,
-		id: string,
-}
+import {Task} from "../../common/types/interfaces";
 
 interface TasksState {
 	tasks: Task[],
 	hideDone: boolean,
 	loading: boolean,
 }
-
-
 
 const tasksSlice = createSlice({
 	name: 'tasks',
