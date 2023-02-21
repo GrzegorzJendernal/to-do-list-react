@@ -1,3 +1,4 @@
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
 	selectAreTasksEmpty,
@@ -11,7 +12,7 @@ import { Button, Wrapper } from "./styled";
 const Buttons = () => {
 	const areTasksEmpty = useSelector(selectAreTasksEmpty);
 	const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
-	const hideDone = useSelector(selectHideDone)
+	const hideDone = useSelector(selectHideDone);
 	
 	const dispatch = useDispatch();
 	return (
@@ -33,6 +34,6 @@ const Buttons = () => {
 			)}
 		</Wrapper>
 	);
-}
+};
 
 export default Buttons;

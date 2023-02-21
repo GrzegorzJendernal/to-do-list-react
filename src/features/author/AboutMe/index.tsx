@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, Wrapper } from "./styled";
 
 const AboutMe = () => (
