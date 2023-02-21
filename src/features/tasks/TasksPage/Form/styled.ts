@@ -17,7 +17,7 @@ const FormButton = styled.button`
     color: #ffffff;
     background-color: teal;
     padding: 10px;
-    border: 0px;
+    border: 0;
     cursor: pointer;
 
     &:hover {
