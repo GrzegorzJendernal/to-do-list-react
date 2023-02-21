@@ -1,6 +1,19 @@
 import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
+interface ListTaskProps {
+	hidden?: boolean,
+}
+
+interface ContentProps {
+	done?: boolean,
+}
+
+interface ButtonProps {
+	toggleDone?: boolean,
+	remove?: boolean,
+}
+
 const TasksList = styled.ul`
     list-style: none;
     padding: 10px;
@@ -14,13 +27,13 @@ const ListTask = styled.li`
     grid-gap: 10px;
     align-items: center;
 
-    ${({ hidden }) => hidden && css`
+    ${({hidden}: ListTaskProps) => hidden && css`
         display: none;
     `}
 `;
 
 const Content = styled.span`
-    ${({ done }) => done && css`
+    ${({done}: ContentProps) => done && css`
         text-decoration: line-through;
     `}
 `;
@@ -34,19 +47,19 @@ const Button = styled.button`
     height: 30px;
     width: 30px;
     color: white;
-    border: 0px;
+    border: 0;
     cursor: pointer;
     transition: background 1s;
     &:active 
         {outline: solid 2px #000000};
 
-    ${({ toggleDone }) => toggleDone && css`
+    ${({toggleDone}: ButtonProps) => toggleDone && css`
         background: #218b21;
         &:hover 
         {background: hsl(120, 62%, 44%);}
     `}
 
-    ${({ remove }) => remove && css`
+    ${({remove}: ButtonProps) => remove && css`
         background: hsl(348, 84%, 47%);
         &:hover
         {background: hsl(348, 84%, 57%);}
