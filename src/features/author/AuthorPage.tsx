@@ -1,7 +1,8 @@
 import Header from '../../common/Header';
-import { Main } from '../../common/Main/styled';
+import { Main } from '../../common/Main';
 import Section from '../../common/Section';
 import AboutMe from './AboutMe';
+import React from "react";
 
 const AuthorPage = () => (
 	<Main>
