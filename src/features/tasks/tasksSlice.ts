@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { getTasksFromLocalStorage } from "./tasksLocalStorage";
+import { getTasksFromLocalStorage } from "../../common/utils/tasksLocalStorage";
 import {RootState} from "../../core/store";
 import {Task} from "../../common/types/interfaces";
 
