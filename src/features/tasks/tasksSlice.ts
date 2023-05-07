@@ -9,13 +9,15 @@ interface TasksState {
 	loading: boolean,
 }
 
+const initialState: TasksState = {
+	tasks: getTasksFromLocalStorage() as Task[] | [],
+	hideDone: false,
+	loading: false,
+};
+
 const tasksSlice = createSlice({
 	name: 'tasks',
-	initialState: {
-		tasks: getTasksFromLocalStorage() as Task[] | [],
-		hideDone: false,
-		loading: false,
-	} as TasksState,
+	initialState,
 	reducers: {
 		addTask: ({tasks}, {payload: task}: PayloadAction<Task>) => {
 			tasks.push(task);
