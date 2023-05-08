@@ -52,6 +52,10 @@ To create the page I used:
 
 9. HTML
 
+10. React Testing Library
+
+11. Jest
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

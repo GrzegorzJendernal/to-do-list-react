@@ -22,8 +22,8 @@ const TaskPage = () => {
 				title="Szczegóły zadania"
 			/>
 			<Section
-				title={task ? task.content : "Nie znaleziono zadania 😞"}
-				body={task ? <Wrapper> <Container>Ukończono:</Container> {task.done ? "Tak" : "Nie"} </Wrapper> : ""}
+				title={!!task ? task.content : "Nie znaleziono zadania 😞"}
+				body={!!task && <Wrapper> <Container>Ukończono:</Container> {task.done ? "Tak" : "Nie"} </Wrapper>}
 			/>
 		</Main>
 	);
